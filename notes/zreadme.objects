@@ -1,0 +1,46 @@
+-three ways to Create a new object:
+  1a) var obj = {};
+  1b) var obj = {title:'My Title', description:'My description'};
+  2)  var obj = Object.create(Object.prototype);
+  3)  var obj = new Object();
+  
+-two ways to assign keys and values
+  -   var obj = {};
+  1)  obj.param = 'new value'; 
+      console.log(obj.param);
+  2a) obj['param'] = 'new value';
+      console.log(obj['param']);
+  2b) var key = 'param';
+      obj[val] = 'new value';
+      console.log(obj[val]);
+   
+-define properties (ECMAScript 5 introduces defineProperty)
+  //see task01.js
+  Object.defineProperty(obj, 'name', {
+    value:       'my name',
+    writable:     true,
+    enumerable:   true,
+    configurable: true
+  })
+               
+-define functions
+  1) var obj = {};
+     obj.description = 'obj description';
+     obj.toString = function() {
+        return this.description;
+     }
+     console.log(obj.toString());
+  2) //see task01.js
+     Object.defineProperty(task, 'toString', {
+        value: function() { return this.description; },
+        writable: false,
+        enumerable: false,
+        configurable: false
+     });      
+    
+    
+
+
+
+
+
