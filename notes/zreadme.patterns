@@ -1,14 +1,23 @@
 -Types of Patterns
   -Creational
-    1)Constructor
-    2)Module
-    3)Factory
-    4)Singleton
+    //Used to construct new objects
+    //Adapting creation to the situation
+      1)Constructor  (creational_constructor_obj.js)
+      2)Module
+      3)Factory
+      4)Singleton
   -Structural
-    1)Decorator
-    2)Facade
-    3)Flyweight
+    //Deal with the relationship of objects
+    //Extend functionality
+    //Simplify functionality
+      1)Decorator
+      2)Facade
+      3)Flyweight
   -Behavioral
-    1)Command
-    2)Mediator
-    3)Observer
+    //Deals with the responsibilities of objects
+    //Help objects cooperate
+    //Assigns clear hierarchy
+    //can encapsulate requests
+      1)Command
+      2)Mediator
+      3)Observer
