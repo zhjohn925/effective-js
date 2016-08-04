@@ -6,9 +6,9 @@
   var app = angular.module('taskManager');
   
   app.factory('Task', function() {
-    var Task = function(name) {
-      this.name = name;
-      this.completed = false;
+    var Task = function(data) {
+      this.name = data.name;
+      this.completed = data.completed;
     }
     Task.prototype.complete = function() {
       console.log('completing task: '+this.name);
