@@ -1,0 +1,23 @@
+///////////////////////////////////////////////////////////////////////////////////
+//The identity (===) operator behaves identically to the equality (==) operator 
+//except no type conversion is done, and the types must be the same to be 
+//considered equal.
+///////////////////////////////////////////////////////////////////////////////////
+
+if (23 == "23")    //it is true
+if (23 === "23")   //it is false
+
+
+/////////////////////////////////////////
+//function: statements and expressions
+/////////////////////////////////////////
+
+//This is statement; the function is not evaluated yet
+function someFun(par) {
+  //code
+}
+
+//This is expression; the function is evaluated and return value to someFun
+var someFun = function(par) {
+  //code 
+}

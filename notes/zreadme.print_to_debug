@@ -1,0 +1,5 @@
+//there are three ways to print on the web browser console:
+
+- console.log('hello');
+- your_name = prompt("what is your name ?");
+- alert(your_name);

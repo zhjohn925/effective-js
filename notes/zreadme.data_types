@@ -1,0 +1,78 @@
+///////////////////
+//Primitive:
+///////////////////
+- Number: floating point numbers, for decimals and integers
+- String
+- Boolean : only be true or false
+- Undefined:  Data type of a variable which does not have a value yet
+- Null:  also means "non-existent"
+
+Note:  Javascript has dynamic typing.   
+       The variables can be changed to different types on the fly.
+       
+       
+///////////////////       
+//Arrays
+///////////////////
+
+var names = ['John', 'Jane', 'Mark'];
+var years = new Array(1990, 1969, 1948);
+var john = ['John', 'Smith', 1990, 'teacher', false];
+
+john.push('blue');    //add the element at the end
+john.unshift('Mr.');  //add the element at the beginning
+john.pop();      //remove the element at the end
+john.shift();    //remove the element at the beginning
+john.indexOf('Smith');   //index of the element in the array
+                         //return -1 if the element is not in the array
+                         
+for (var i=0; i<names.length; i++) {
+  console.log(names[i]);
+}                         
+
+
+///////////////////
+//Objects 
+///////////////////
+
+//Declare object 1:
+//pairs of {key: value}
+var john = {
+  //member properties (variables)
+  name: 'John',
+  lastName: 'Smith',
+  yearOfBirth: 1990,
+  job: 'teacher',
+  isMarried: false,
+  family: ['Jane', 'Mark', 'Bob'],
+  //member methods
+  calculateAge: function() {
+    return 2016 - this.yearOfBirth;
+  }
+};
+
+//Declare object 2:
+var jane = new Object();
+jane.name = 'Jane';
+jane.lastName = 'Smith';
+jane['yearOfBirth'] = 1969;
+jane['job'] = 'retired';
+jane['isMarried'] = true;
+
+//retrieve the values
+john.lastName;
+john['lastName'];
+john.calculateAge();
+
+//mutate member variables
+john.lastName = 'Miller';
+john['job'] = 'programmer';
+
+                         
+                         
+                         
+                         
+
+
+
+
