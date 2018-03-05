@@ -1,0 +1,39 @@
+//Refer to <the-complete-javascript-course>
+// 029 
+// 030 Hoisting in Practice.mp4
+
+
+HOISTING:
+- Code is scanned for function declarations: for each function, a 
+  property is created in the Variable Object, pointing to the function.
+
+- Code is scanned for variable declarations: for each variable, a 
+  property is created in the Variable Object, and set to undefined.
+  
+
+////////////////////
+//functions
+////////////////////
+
+//case 1:  function statement can be out of order
+calculateAge(1965);     //print 51
+
+//function statement
+function calculateAge(year) {
+  console.log(2016-year);
+}
+
+//case 2:  function expression must be in order
+retirement(1956);   //error
+
+//function expression
+var retirement = function(year) {
+  console.log(65-(2016-year));
+}
+
+
+//////////////////////
+//Variables
+//////////////////////
+console.log(age);   //print "undefined"
+var age = 23;

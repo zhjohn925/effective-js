@@ -1,0 +1,14 @@
+//Refer to <the-complete-javascript-course>
+028 Execution Contexts and the Execution Statck.mp4
+
+//Execution Context:
+A box, a container, or a wrapper which stores variables and in 
+which a piece of our code is evaluated and executed.
+
+//The default: Global Execution Context
+- Code that is not inside any function
+- Associated with the global object
+- In the browser, that is the window object.
+  ie. 
+  lastName === window.lastName;   //returns true
+
