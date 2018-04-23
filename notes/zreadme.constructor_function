@@ -1,0 +1,37 @@
+//constructor function
+var Person = function (name, yearOfBirth, job) {
+  this.name = name;
+  this.yearOfBirth = yearOfBirth;
+  this.job = job;
+  
+  //define method in the constructor, each object
+  //has its own copy of this method. this takes 
+  //a lot of memory is many objects are created. 
+  //Therefore, put this method into prototype as below
+  
+  //this.calculateAge = function() {
+  //  console.log(2018-this.yearOfBirth);
+  //}
+}
+
+
+//"new" operator:
+//  1. creates a brand-new empty object;
+//  2. then call Person() function;
+//  3. then point 'this' available in Person() to the empty object;
+//  4. add properties (name, yearOfBirth, job) to this, now
+//     the brand-new object has properties;
+//  5. 'new' return the object to "john".
+
+
+//every thing is put in prototype has one copy only
+//can be inherited. 
+Person.prototype.calculateAge = function() {
+    console.log(2018-this.yearOfBirth);
+}
+Person.prototype.lastName = 'Smith';
+
+var john = new Person('John', 1990, 'teacher');
+john.calculateAge();
+var jane = new Person('Jane', 1969, 'designer');
+jane.calculateAge();

@@ -1,3 +1,14 @@
+////////////////////////////////////////
+//almost everything is object:
+////////////////////////////////////////
+1. primitive:
+   Numbers, Strings, Boolean, Undefined, Null
+2. objects:
+   Arrays, Functions, Objects, Dates, 
+   Wrappers for Numbers, Strings, Booleans
+
+
+
 ///////////////////
 //Primitive:
 ///////////////////

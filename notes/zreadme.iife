@@ -1,0 +1,14 @@
+//The below two examples are IIFE - Immediately invoked function expression
+//The variable (ie. score) inside IIFE can not be accessed
+//The IIFE can be used for data privacy
+
+(function() {
+  var score = Math.random() * 10;
+  console.log(score >= 5);
+})();
+
+(function(goodluck) {
+  var score = Math.random() * 10;
+  console.log(score >= 5-goodluck);
+})(5);
+
