@@ -200,8 +200,8 @@ h2 {
   margin-bottom: 15px;
 }
 
-.income_title { color: #28B9B5; }
-.expenses_title { color: #FF5049; }
+.income__title { color: #28B9B5; }
+.expenses__title { color: #FF5049; }
 
 .item {
   padding: 13px;
@@ -247,7 +247,7 @@ h2 {
   float: left;
 }
 
-.item__delete--btn {
+.item__delete-btn {
   font-size: 22px;
   background: none;
   border: none;
